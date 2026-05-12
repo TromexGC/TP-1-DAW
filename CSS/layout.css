@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.noticias-principales {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
