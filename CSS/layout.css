@@ -1,10 +1,26 @@
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .noticias-principales {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.contenido-general {
+    display: flex;
+    flex-direction: column;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

@@ -1,14 +1,92 @@
+/* Mobile first styles */
+header {
+  background: #811;
+  color: white;
+  padding: 15px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.fecha {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+/* Mobile */
+nav {
+  display: none;
+}
+
+.hamburguesa {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.noticias-principales {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Desktop */
 @media (min-width: 768px) {
 
-  .noticias-principales {
-    flex-direction: row;
-  }
+    nav {
+        display: block;
+        margin-top: 20px;
+    }
 
-  nav ul {
-    display: flex;
-  }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        list-style: none;
+    }
 
-  .hamburguesa {
-    display: none;
-  }
+    nav a {
+        color: white;
+        font-weight: bold;
+    }
+
+    .hamburguesa {
+        display: none;
+    }
+    .logo {
+        width: 180px;
+    }
+
+    /* Main */
+
+    .noticia {
+        flex: 1 1 300px;
+    }
+
+    .principal {
+        flex: 2 1 600px;
+    }
+    .contenido-general {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    main {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
